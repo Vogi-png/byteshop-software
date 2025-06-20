@@ -1,0 +1,663 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FuncionarioCadastroPessoal</class>
+ <widget class="QWidget" name="FuncionarioCadastroPessoal">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>659</width>
+    <height>818</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>641</width>
+     <height>791</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#voltar_button, QPushButton#cep_button {
+	background-color: rgba(0, 0, 0, 0);
+	color: rgba(85, 98, 112, 255);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 30);
+    font-weight: bold;
+}
+
+QPushButton#voltar_button:hover, QPushButton#cep_button:hover {
+    background-color: qlineargradient(
+        spread:pad,
+        x1:0, y1:0, x2:1, y2:1,
+        stop:0 rgba(25, 55, 100, 240),
+        stop:1 rgba(220, 220, 220, 80)
+    );
+	color: rgba(155, 168, 182, 220);
+}
+
+QPushButton#voltar_button:pressed, QPushButton#cep_button:pressed {
+	padding-left: 5px;
+	padding-top: 5px;
+	color: rgba(115, 128, 142, 255);
+    background-color: qlineargradient(
+        spread:pad,
+        x1:0, y1:0, x2:1, y2:1,
+        stop:0 rgba(10, 25, 50, 230),
+        stop:1 rgba(180, 180, 180, 50)
+    );
+}
+
+
+
+QPushButton#seguir_button {
+    background-color: qlineargradient(
+        spread:pad,
+        x1:0, y1:0, x2:1, y2:1,
+        stop:0 rgba(15, 35, 70, 230),
+        stop:1 rgba(200, 200, 200, 60)
+    );
+    color: rgba(255, 255, 255, 230);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 30);
+    font-weight: bold;
+}
+
+QPushButton#seguir_button:hover {
+    background-color: qlineargradient(
+        spread:pad,
+        x1:0, y1:0, x2:1, y2:1,
+        stop:0 rgba(25, 55, 100, 240),
+        stop:1 rgba(220, 220, 220, 80)
+    );
+}
+
+QPushButton#seguir_button:pressed {
+    padding-left: 3px;
+    padding-top: 3px;
+    background-color: qlineargradient(
+        spread:pad,
+        x1:0, y1:0, x2:1, y2:1,
+        stop:0 rgba(10, 25, 50, 230),
+        stop:1 rgba(180, 180, 180, 50)
+    );
+}
+</string>
+   </property>
+   <widget class="QLabel" name="background">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>601</width>
+      <height>751</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/resources/log_background.png);
+border-radius: 20px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="fundotransparente">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>30</y>
+      <width>581</width>
+      <height>731</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba( 0 ,0, 0, 100 );
+border-radius: 20px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="voltar_button">
+    <property name="geometry">
+     <rect>
+      <x>55</x>
+      <y>57</y>
+      <width>51</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Voltar</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/resources/ic_voltar.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>40</y>
+      <width>291</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>18</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgba(255, 255, 255, 214);</string>
+    </property>
+    <property name="text">
+     <string>Cadastro de Funcionário</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="fun_nome">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>178</y>
+      <width>371</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+    background-color: rgba(0, 0, 0, 80);
+    border: 2px solid rgba(105, 118, 132, 220);
+    border-radius: 10px;
+    color: rgba(255, 255, 255, 230);
+    padding: 6px 10px;
+}
+
+QLineEdit:focus {
+    border: 2px solid rgba(130, 170, 255, 255);
+    background-color: rgba(0, 0, 0, 100);
+}
+</string>
+    </property>
+    <property name="placeholderText">
+     <string>Informe nome do funcionário</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="fun_rua">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>431</y>
+      <width>371</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+    background-color: rgba(0, 0, 0, 80);
+    border: 2px solid rgba(105, 118, 132, 220);
+    border-radius: 10px;
+    color: rgba(255, 255, 255, 230);
+    padding: 6px 10px;
+}
+
+QLineEdit:focus {
+    border: 2px solid rgba(130, 170, 255, 255);
+    background-color: rgba(0, 0, 0, 100);
+}
+</string>
+    </property>
+    <property name="placeholderText">
+     <string>Rua / Avenida</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="fun_cpf">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>270</y>
+      <width>231</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+    background-color: rgba(0, 0, 0, 80);
+    border: 2px solid rgba(105, 118, 132, 220);
+    border-radius: 10px;
+    color: rgba(255, 255, 255, 230);
+    padding: 6px 10px;
+}
+
+QLineEdit:focus {
+    border: 2px solid rgba(130, 170, 255, 255);
+    background-color: rgba(0, 0, 0, 100);
+}
+</string>
+    </property>
+    <property name="placeholderText">
+     <string>Insira o CPF do funcionário</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="fun_aniversario">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>270</y>
+      <width>131</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+    background-color: rgba(0, 0, 0, 80);
+    border: 2px solid rgba(105, 118, 132, 220);
+    border-radius: 10px;
+    color: rgba(255, 255, 255, 230);
+    padding: 6px 10px;
+}
+
+QLineEdit:focus {
+    border: 2px solid rgba(130, 170, 255, 255);
+    background-color: rgba(0, 0, 0, 100);
+}
+</string>
+    </property>
+    <property name="placeholderText">
+     <string>DD/MM/AAAA</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="fun_numero">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>494</y>
+      <width>121</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+    background-color: rgba(0, 0, 0, 80);
+    border: 2px solid rgba(105, 118, 132, 220);
+    border-radius: 10px;
+    color: rgba(255, 255, 255, 230);
+    padding: 6px 10px;
+}
+
+QLineEdit:focus {
+    border: 2px solid rgba(130, 170, 255, 255);
+    background-color: rgba(0, 0, 0, 100);
+}
+</string>
+    </property>
+    <property name="placeholderText">
+     <string>Número</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="fun_cep">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>368</y>
+      <width>311</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+    background-color: rgba(0, 0, 0, 80);
+    border: 2px solid rgba(105, 118, 132, 220);
+    border-radius: 10px;
+    color: rgba(255, 255, 255, 230);
+    padding: 6px 10px;
+}
+
+QLineEdit:focus {
+    border: 2px solid rgba(130, 170, 255, 255);
+    background-color: rgba(0, 0, 0, 100);
+}
+</string>
+    </property>
+    <property name="placeholderText">
+     <string>CEP</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>138</x>
+      <y>341</y>
+      <width>201</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgba(255, 255, 255, 214);</string>
+    </property>
+    <property name="text">
+     <string>Endereço:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>377</x>
+      <y>243</y>
+      <width>201</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgba(255, 255, 255, 214);</string>
+    </property>
+    <property name="text">
+     <string>Aniversário:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>138</x>
+      <y>244</y>
+      <width>201</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgba(255, 255, 255, 214);</string>
+    </property>
+    <property name="text">
+     <string>CPF:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>138</x>
+      <y>150</y>
+      <width>201</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgba(255, 255, 255, 214);</string>
+    </property>
+    <property name="text">
+     <string>Nome (completo):</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>481</x>
+      <y>69</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgba(255, 255, 255, 214);</string>
+    </property>
+    <property name="text">
+     <string>Dados pessoais</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="seguir_button">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>702</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Seguir  &gt;</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="fun_complemento">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>493</y>
+      <width>241</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+    background-color: rgba(0, 0, 0, 80);
+    border: 2px solid rgba(105, 118, 132, 220);
+    border-radius: 10px;
+    color: rgba(255, 255, 255, 230);
+    padding: 6px 10px;
+}
+
+QLineEdit:focus {
+    border: 2px solid rgba(130, 170, 255, 255);
+    background-color: rgba(0, 0, 0, 100);
+}
+</string>
+    </property>
+    <property name="placeholderText">
+     <string>Complemento</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="fun_estado">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>619</y>
+      <width>121</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+    background-color: rgba(0, 0, 0, 80);
+    border: 2px solid rgba(105, 118, 132, 220);
+    border-radius: 10px;
+    color: rgba(255, 255, 255, 230);
+    padding: 6px 10px;
+}
+
+QLineEdit:focus {
+    border: 2px solid rgba(130, 170, 255, 255);
+    background-color: rgba(0, 0, 0, 100);
+}
+</string>
+    </property>
+    <property name="placeholderText">
+     <string>Estado</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="fun_cidade">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>619</y>
+      <width>241</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+    background-color: rgba(0, 0, 0, 80);
+    border: 2px solid rgba(105, 118, 132, 220);
+    border-radius: 10px;
+    color: rgba(255, 255, 255, 230);
+    padding: 6px 10px;
+}
+
+QLineEdit:focus {
+    border: 2px solid rgba(130, 170, 255, 255);
+    background-color: rgba(0, 0, 0, 100);
+}
+</string>
+    </property>
+    <property name="placeholderText">
+     <string>Cidade</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="cep_button">
+    <property name="geometry">
+     <rect>
+      <x>447</x>
+      <y>367</y>
+      <width>51</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>51</width>
+      <height>51</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="toolTip">
+     <string>Procurar CEP</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/resources/ic_local.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="fun_bairro">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>557</y>
+      <width>371</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+    background-color: rgba(0, 0, 0, 80);
+    border: 2px solid rgba(105, 118, 132, 220);
+    border-radius: 10px;
+    color: rgba(255, 255, 255, 230);
+    padding: 6px 10px;
+}
+
+QLineEdit:focus {
+    border: 2px solid rgba(130, 170, 255, 255);
+    background-color: rgba(0, 0, 0, 100);
+}
+</string>
+    </property>
+    <property name="placeholderText">
+     <string>Bairro</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../resources/res.qrc"/>
+ </resources>
+ <connections/>
+</ui>

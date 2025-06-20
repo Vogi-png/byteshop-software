@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TabelaUsuario</class>
+ <widget class="QWidget" name="TabelaUsuario">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>742</width>
+    <height>829</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>721</width>
+     <height>801</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#buscar_button, QPushButton#logout_button, QPushButton#add_button, QPushButton#editar_button, QPushButton#deletar_button  {
+	background-color: rgba(0, 0, 0, 0);
+	color:rgba(85, 98, 112, 255);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 30);
+    font-weight: bold;
+}
+
+QPushButton#buscar_button:hover,  QPushButton#logout_button:hover,
+QPushButton#add_button:hover,
+QPushButton#editar_button:hover,
+QPushButton#deletar_button:hover {
+    background-color: qlineargradient(
+        spread:pad,
+        x1:0, y1:0, x2:1, y2:1,
+        stop:0 rgba(25, 55, 100, 240),
+        stop:1 rgba(220, 220, 220, 80)
+    );
+	color:rgba(155, 168, 182, 220);
+}
+
+QPushButton#buscar_button:pressed, QPushButton#logout_button:pressed,
+QPushButton#add_button:pressed,
+QPushButton#editar_button:pressed,
+QPushButton#deletar_button:pressed {
+	padding-left:5px;
+	padding-top:5px;
+	color:rgba(115, 128, 142, 255);
+    background-color: qlineargradient(
+        spread:pad,
+        x1:0, y1:0, x2:1, y2:1,
+        stop:0 rgba(10, 25, 50, 230),
+        stop:1 rgba(180, 180, 180, 50)
+    );
+}
+
+QPushButton#cliente_button, QPushButton#compras_button, QPushButton#sobre_button, QPushButton#produtos_button {
+    background-color: qlineargradient(
+        spread:pad,
+        x1:0, y1:0, x2:1, y2:1,
+        stop:0 rgba(15, 35, 70, 120),  
+        stop:1 rgba(200, 200, 200, 40)
+    );
+    color: rgba(255, 255, 255, 180);  
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 30);
+    font-weight: bold;
+}
+
+QPushButton#cliente_button:hover, QPushButton#compras_button:hover, QPushButton#sobre_button:hover,
+QPushButton#produtos_button:hover {
+    background-color: qlineargradient(
+        spread:pad,
+        x1:0, y1:0, x2:1, y2:1,
+        stop:0 rgba(25, 55, 100, 150),
+        stop:1 rgba(220, 220, 220, 50)
+    );
+}
+
+QPushButton#cliente_button:pressed, QPushButton#compras_button:pressed, QPushButton#sobre_button:pressed,
+QPushButton#produtos_button:pressed {
+    padding-left: 3px;
+    padding-top: 3px;
+    background-color: qlineargradient(
+        spread:pad,
+        x1:0, y1:0, x2:1, y2:1,
+        stop:0 rgba(10, 25, 50, 150),
+        stop:1 rgba(180, 180, 180, 30)
+    );
+}
+</string>
+   </property>
+   <widget class="QLabel" name="background">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>701</width>
+      <height>771</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/resources/log_background.png);
+border-radius: 20px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="barra_pesquisa">
+    <property name="geometry">
+     <rect>
+      <x>35</x>
+      <y>212</y>
+      <width>581</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+QLineEdit {
+    background-color: rgba(0, 0, 0, 80);
+    border: 2px solid rgba(105, 118, 132, 220);
+    border-radius: 20px;
+    color: rgba(255, 255, 255, 230);
+    padding: 7px 13px;
+}
+
+QLineEdit:focus {
+    border: 2px solid rgba(130, 170, 255, 255);
+    background-color: rgba(0, 0, 0, 100);
+}
+
+</string>
+    </property>
+    <property name="placeholderText">
+     <string>Informe característica do cliente</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>46</x>
+      <y>165</y>
+      <width>481</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgba(255, 255, 255, 214);</string>
+    </property>
+    <property name="text">
+     <string>Pesquisar cliente:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="buscar_button">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>212</y>
+      <width>51</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>51</width>
+      <height>51</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="toolTip">
+     <string>Pesquisar</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/resources/ic_busca.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="sobre_button">
+    <property name="geometry">
+     <rect>
+      <x>454</x>
+      <y>37</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Sobre</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="logout_button">
+    <property name="geometry">
+     <rect>
+      <x>637</x>
+      <y>32</y>
+      <width>50</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>51</width>
+      <height>51</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="toolTip">
+     <string>Logout</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/resources/ic_logout.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>22</y>
+      <width>680</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba( 0 ,0, 0, 100 );
+border-radius: 20px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="cliente_button">
+    <property name="geometry">
+     <rect>
+      <x>178</x>
+      <y>37</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Ciente</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="compras_button">
+    <property name="geometry">
+     <rect>
+      <x>316</x>
+      <y>37</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Carrinho</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="fundotransparente_3">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>280</y>
+      <width>661</width>
+      <height>45</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba( 113 ,118, 145, 200 );
+border-radius: 5px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="add_button">
+    <property name="geometry">
+     <rect>
+      <x>38</x>
+      <y>285</y>
+      <width>35</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>35</width>
+      <height>35</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="toolTip">
+     <string>Adicionar cliente</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/resources/ic_add.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="deletar_button">
+    <property name="geometry">
+     <rect>
+      <x>646</x>
+      <y>285</y>
+      <width>35</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>35</width>
+      <height>35</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="toolTip">
+     <string>Excluir</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/resources/ic_deletar.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="editar_button">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>285</y>
+      <width>35</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>35</width>
+      <height>35</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="toolTip">
+     <string>Editar</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/resources/ic_editar.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="cliente_table">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>330</y>
+      <width>661</width>
+      <height>431</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+
+QTableWidget {
+    background-color: rgba( 133 ,139, 174, 51 );
+	border-radius: 20px;
+    color: rgba(255, 255, 255, 230);
+    gridline-color: rgba(255, 255, 255, 80);
+    font-size: 14px;
+}
+
+QHeaderView::section {
+    background-color: rgba(40, 60, 110, 200);
+    color: white;
+    font-weight: bold;
+    padding: 3px;
+    border: 1px solid rgba( 133 ,139, 174, 51 );
+}
+
+</string>
+    </property>
+    <column>
+     <property name="text">
+      <string>ID</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>CPF</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Nome</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Email</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Desconto</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QPushButton" name="produtos_button">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>37</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Produto</string>
+    </property>
+   </widget>
+   <zorder>background</zorder>
+   <zorder>barra_pesquisa</zorder>
+   <zorder>label_2</zorder>
+   <zorder>buscar_button</zorder>
+   <zorder>label_3</zorder>
+   <zorder>cliente_button</zorder>
+   <zorder>compras_button</zorder>
+   <zorder>logout_button</zorder>
+   <zorder>sobre_button</zorder>
+   <zorder>fundotransparente_3</zorder>
+   <zorder>add_button</zorder>
+   <zorder>deletar_button</zorder>
+   <zorder>editar_button</zorder>
+   <zorder>cliente_table</zorder>
+   <zorder>produtos_button</zorder>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../resources/res.qrc"/>
+ </resources>
+ <connections/>
+</ui>

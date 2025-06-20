@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Sobre</class>
+ <widget class="QWidget" name="Sobre">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>476</width>
+    <height>586</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>451</width>
+     <height>561</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#voltar_button {
+	background-color: rgba(0, 0, 0, 0);
+	color:rgba(85, 98, 112, 255);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 30);
+    font-weight: bold;
+}
+
+QPushButton#voltar_button:hover {
+    background-color: qlineargradient(
+        spread:pad,
+        x1:0, y1:0, x2:1, y2:1,
+        stop:0 rgba(25, 55, 100, 240),
+        stop:1 rgba(220, 220, 220, 80)
+    );
+	color:rgba(155, 168, 182, 220);
+}
+
+QPushButton#voltar_button:pressed {
+	padding-left:5px;
+	padding-top:5px;
+	color:rgba(115, 128, 142, 255);
+    background-color: qlineargradient(
+        spread:pad,
+        x1:0, y1:0, x2:1, y2:1,
+        stop:0 rgba(10, 25, 50, 230),
+        stop:1 rgba(180, 180, 180, 50)
+    );
+}</string>
+   </property>
+   <widget class="QLabel" name="background">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>30</y>
+      <width>411</width>
+      <height>511</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/resources/log_background.png);
+border-radius: 15px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="fundo_transparente">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>40</y>
+      <width>391</width>
+      <height>491</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba( 0 ,0, 0, 100 );
+border-radius: 15px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>99</x>
+      <y>148</y>
+      <width>171</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgba(255, 255, 255, 214);</string>
+    </property>
+    <property name="text">
+     <string>Desenvolvedores:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>99</x>
+      <y>358</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgba(255, 255, 255, 214);</string>
+    </property>
+    <property name="text">
+     <string>Auxiliado por:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>298</x>
+      <y>50</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>18</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgba(255, 255, 255, 214);</string>
+    </property>
+    <property name="text">
+     <string>Créditos</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>99</x>
+      <y>179</y>
+      <width>241</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgba( 255, 255, 255, 230 );</string>
+    </property>
+    <property name="text">
+     <string>Giovanna Leal de Araujo
+Guilherme Barreiros Pimentel
+João Pedro de Macedo Figueiredo
+João Vitor Gomes Santos
+Lorenzo Braiener da Cunha
+Maria Luiza França Mendes
+Raphael Bíssimos Costa Dos Santos</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>99</x>
+      <y>405</y>
+      <width>301</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgba( 255, 255, 255, 230 );</string>
+    </property>
+    <property name="text">
+     <string>Nelson Carlos Medeiros de Vasconcellos
+
+</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>490</y>
+      <width>71</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgba( 255, 255, 255, 230 );</string>
+    </property>
+    <property name="text">
+     <string>Versão 0.0</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="voltar_button">
+    <property name="geometry">
+     <rect>
+      <x>56</x>
+      <y>60</y>
+      <width>51</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/resources/ic_voltar.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <zorder>background</zorder>
+   <zorder>label_4</zorder>
+   <zorder>label_5</zorder>
+   <zorder>fundo_transparente</zorder>
+   <zorder>voltar_button</zorder>
+   <zorder>label_3</zorder>
+   <zorder>label_6</zorder>
+   <zorder>label_2</zorder>
+   <zorder>label</zorder>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../resources/res.qrc"/>
+ </resources>
+ <connections/>
+</ui>
