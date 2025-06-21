@@ -15,18 +15,18 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QFont, QFontDatabase, QGradient, QIcon,
     QImage, QKeySequence, QLinearGradient, QPainter,
     QPalette, QPixmap, QRadialGradient, QTransform)
-from PySide6.QtWidgets import (QApplication, QLabel, QLineEdit, QPushButton,
-    QSizePolicy, QWidget)
+from PySide6.QtWidgets import (QApplication, QLabel, QPushButton, QSizePolicy,
+    QWidget)
 import res_rc
 
 class Ui_Menu(object):
     def setupUi(self, Menu):
         if not Menu.objectName():
             Menu.setObjectName(u"Menu")
-        Menu.resize(777, 671)
+        Menu.resize(777, 515)
         self.widget = QWidget(Menu)
         self.widget.setObjectName(u"widget")
-        self.widget.setGeometry(QRect(10, 10, 741, 631))
+        self.widget.setGeometry(QRect(10, 10, 741, 491))
         self.widget.setStyleSheet(u"QPushButton#buscar_button, QPushButton#logout_button {\n"
 "	background-color: rgba(0, 0, 0, 0);\n"
 "	color:rgba(85, 98, 112, 255);\n"
@@ -96,50 +96,12 @@ class Ui_Menu(object):
 "")
         self.background = QLabel(self.widget)
         self.background.setObjectName(u"background")
-        self.background.setGeometry(QRect(10, 20, 711, 561))
+        self.background.setGeometry(QRect(10, 20, 711, 451))
         self.background.setStyleSheet(u"border-image: url(:/resources/log_background.png);\n"
 "border-radius: 20px;")
-        self.barra_pesquisa = QLineEdit(self.widget)
-        self.barra_pesquisa.setObjectName(u"barra_pesquisa")
-        self.barra_pesquisa.setGeometry(QRect(39, 448, 581, 51))
-        font = QFont()
-        font.setPointSize(11)
-        self.barra_pesquisa.setFont(font)
-        self.barra_pesquisa.setStyleSheet(u"\n"
-"QLineEdit {\n"
-"    background-color: rgba(0, 0, 0, 80);\n"
-"    border: 2px solid rgba(105, 118, 132, 220);\n"
-"    border-radius: 20px;\n"
-"    color: rgba(255, 255, 255, 230);\n"
-"    padding: 7px 13px;\n"
-"}\n"
-"\n"
-"QLineEdit:focus {\n"
-"    border: 2px solid rgba(130, 170, 255, 255);\n"
-"    background-color: rgba(0, 0, 0, 100);\n"
-"}\n"
-"\n"
-"")
-        self.buscar_button = QPushButton(self.widget)
-        self.buscar_button.setObjectName(u"buscar_button")
-        self.buscar_button.setGeometry(QRect(634, 448, 51, 51))
-        self.buscar_button.setMaximumSize(QSize(51, 51))
-        font1 = QFont()
-        font1.setPointSize(15)
-        font1.setBold(True)
-        self.buscar_button.setFont(font1)
-        self.buscar_button.setStyleSheet(u"border-image: url(:/resources/ic_busca.png);")
-        self.label = QLabel(self.widget)
-        self.label.setObjectName(u"label")
-        self.label.setGeometry(QRect(50, 400, 481, 31))
-        font2 = QFont()
-        font2.setPointSize(20)
-        font2.setBold(True)
-        self.label.setFont(font2)
-        self.label.setStyleSheet(u"color: rgba(255, 255, 255, 214);")
         self.fundo_transparente = QLabel(self.widget)
         self.fundo_transparente.setObjectName(u"fundo_transparente")
-        self.fundo_transparente.setGeometry(QRect(20, 30, 691, 541))
+        self.fundo_transparente.setGeometry(QRect(20, 30, 691, 431))
         self.fundo_transparente.setStyleSheet(u"background-color: rgba( 0 ,0, 0, 100 );\n"
 "border-radius: 20px;")
         self.sobre_button = QPushButton(self.widget)
@@ -158,7 +120,10 @@ class Ui_Menu(object):
         self.logout_button.setObjectName(u"logout_button")
         self.logout_button.setGeometry(QRect(650, 40, 50, 50))
         self.logout_button.setMaximumSize(QSize(51, 51))
-        self.logout_button.setFont(font1)
+        font = QFont()
+        font.setPointSize(15)
+        font.setBold(True)
+        self.logout_button.setFont(font)
         self.logout_button.setStyleSheet(u"border-image: url(:/resources/ic_logout.png);")
         self.label_3 = QLabel(self.widget)
         self.label_3.setObjectName(u"label_3")
@@ -167,13 +132,10 @@ class Ui_Menu(object):
 "border-radius: 20px;")
         self.label_2 = QLabel(self.widget)
         self.label_2.setObjectName(u"label_2")
-        self.label_2.setGeometry(QRect(-40, 50, 450, 380))
+        self.label_2.setGeometry(QRect(-40, 100, 450, 380))
         self.label_2.setStyleSheet(u"border-image: url(:/resources/logo.png);")
         self.background.raise_()
         self.fundo_transparente.raise_()
-        self.label.raise_()
-        self.buscar_button.raise_()
-        self.barra_pesquisa.raise_()
         self.label_3.raise_()
         self.logout_button.raise_()
         self.label_2.raise_()
@@ -190,12 +152,6 @@ class Ui_Menu(object):
     def retranslateUi(self, Menu):
         Menu.setWindowTitle(QCoreApplication.translate("Menu", u"Form", None))
         self.background.setText("")
-        self.barra_pesquisa.setPlaceholderText(QCoreApplication.translate("Menu", u"Informe caracter\u00edstica do produto", None))
-#if QT_CONFIG(tooltip)
-        self.buscar_button.setToolTip(QCoreApplication.translate("Menu", u"Pesquisar", None))
-#endif // QT_CONFIG(tooltip)
-        self.buscar_button.setText("")
-        self.label.setText(QCoreApplication.translate("Menu", u"Pesquisar produto:", None))
         self.fundo_transparente.setText("")
         self.sobre_button.setText(QCoreApplication.translate("Menu", u"Sobre", None))
         self.produtos_button.setText(QCoreApplication.translate("Menu", u"Produto", None))

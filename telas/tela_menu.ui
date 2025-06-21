@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>777</width>
-    <height>671</height>
+    <height>515</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,7 +19,7 @@
      <x>10</x>
      <y>10</y>
      <width>741</width>
-     <height>631</height>
+     <height>491</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -95,7 +95,7 @@ QPushButton#produtos_button:pressed {
       <x>10</x>
       <y>20</y>
       <width>711</width>
-      <height>561</height>
+      <height>451</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -106,101 +106,13 @@ border-radius: 20px;</string>
      <string/>
     </property>
    </widget>
-   <widget class="QLineEdit" name="barra_pesquisa">
-    <property name="geometry">
-     <rect>
-      <x>39</x>
-      <y>448</y>
-      <width>581</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>11</pointsize>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">
-QLineEdit {
-    background-color: rgba(0, 0, 0, 80);
-    border: 2px solid rgba(105, 118, 132, 220);
-    border-radius: 20px;
-    color: rgba(255, 255, 255, 230);
-    padding: 7px 13px;
-}
-
-QLineEdit:focus {
-    border: 2px solid rgba(130, 170, 255, 255);
-    background-color: rgba(0, 0, 0, 100);
-}
-
-</string>
-    </property>
-    <property name="placeholderText">
-     <string>Informe característica do produto</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="buscar_button">
-    <property name="geometry">
-     <rect>
-      <x>634</x>
-      <y>448</y>
-      <width>51</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>51</width>
-      <height>51</height>
-     </size>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>15</pointsize>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="toolTip">
-     <string>Pesquisar</string>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-image: url(:/resources/ic_busca.png);</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label">
-    <property name="geometry">
-     <rect>
-      <x>50</x>
-      <y>400</y>
-      <width>481</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>20</pointsize>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color: rgba(255, 255, 255, 214);</string>
-    </property>
-    <property name="text">
-     <string>Pesquisar produto:</string>
-    </property>
-   </widget>
    <widget class="QLabel" name="fundo_transparente">
     <property name="geometry">
      <rect>
       <x>20</x>
       <y>30</y>
       <width>691</width>
-      <height>541</height>
+      <height>431</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -315,7 +227,7 @@ border-radius: 20px;</string>
     <property name="geometry">
      <rect>
       <x>-40</x>
-      <y>50</y>
+      <y>100</y>
       <width>450</width>
       <height>380</height>
      </rect>
@@ -329,9 +241,6 @@ border-radius: 20px;</string>
    </widget>
    <zorder>background</zorder>
    <zorder>fundo_transparente</zorder>
-   <zorder>label</zorder>
-   <zorder>buscar_button</zorder>
-   <zorder>barra_pesquisa</zorder>
    <zorder>label_3</zorder>
    <zorder>logout_button</zorder>
    <zorder>label_2</zorder>
