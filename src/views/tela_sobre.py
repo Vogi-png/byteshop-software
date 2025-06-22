@@ -1,14 +1,13 @@
 import sys
 from PySide6.QtWidgets import QApplication, QMainWindow
-from ui_tela_usuario_cadastro_pessoal import Ui_UsuarioCadastroPessoal
+from ui.ui_tela_sobre import Ui_Sobre
 import res_rc
 
-
-class CadastroClienteWindow(QMainWindow):
+class SobreWindow(QMainWindow):
 
     def __init__(self, parent_window):
         super().__init__()
-        self.ui = Ui_UsuarioCadastroPessoal()
+        self.ui = Ui_Sobre()
         self.ui.setupUi(self)
         
         self.parent = parent_window

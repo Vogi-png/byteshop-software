@@ -1,14 +1,14 @@
 import sys
 from PySide6.QtWidgets import QApplication, QMainWindow
-from ui_tela_carrinho_cliente import Ui_CarrinhoCliente
+from ui.ui_tela_cadastro_produto import Ui_CadastroProduto
 import res_rc
 
 
-class CarrinhoClienteWindow(QMainWindow):
+class CadastroProdutoWindow(QMainWindow):
 
     def __init__(self, parent_window):
         super().__init__()
-        self.ui = Ui_CarrinhoCliente()
+        self.ui = Ui_CadastroProduto()
         self.ui.setupUi(self)
         
         self.parent = parent_window

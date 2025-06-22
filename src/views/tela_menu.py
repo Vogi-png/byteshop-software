@@ -1,10 +1,10 @@
 import sys
 from PySide6.QtWidgets import QApplication, QMainWindow
-from ui_tela_menu import Ui_Menu 
-from tela_carrinho import CarrinhoWindow
-from tela_tabela_usuario import TabelaUsuarioWindow
-from tela_tabela_produto import TabelaProdutoWindow
-from tela_sobre import SobreWindow
+from ui.ui_tela_menu import Ui_Menu 
+from views.tela_carrinho import CarrinhoWindow
+from views.tela_tabela_usuario import TabelaUsuarioWindow
+from views.tela_tabela_produto import TabelaProdutoWindow
+from views.tela_sobre import SobreWindow
 
 import res_rc
 

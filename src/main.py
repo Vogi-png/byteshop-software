@@ -1,7 +1,7 @@
 import sys
 from PySide6.QtWidgets import QApplication, QMainWindow
-from ui_tela_login import Ui_Login
-from tela_menu import MenuWindow
+from ui.ui_tela_login import Ui_Login
+from views.tela_menu import MenuWindow
 import res_rc
 
 class LoginWindow(QMainWindow):

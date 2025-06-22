@@ -1,6 +1,6 @@
 import sys
 from PySide6.QtWidgets import QApplication, QMainWindow
-from ui_tela_carrinho import Ui_Carrinho
+from ui.ui_tela_carrinho import Ui_Carrinho
 import res_rc
 
 class CarrinhoWindow(QMainWindow):
@@ -17,28 +17,28 @@ class CarrinhoWindow(QMainWindow):
         self.ui.add_button.clicked.connect(self.abrir_tela_carrinho_cliente)
             
     def abrir_tela_produto(self):
-        from tela_tabela_produto import TabelaProdutoWindow
+        from views.tela_tabela_produto import TabelaProdutoWindow
 
         self.janela_menu = TabelaProdutoWindow(parent_window=self)
         self.janela_menu.show()
         self.hide()
         
     def abrir_tela_cliente(self):
-        from tela_tabela_usuario import TabelaUsuarioWindow
+        from views.tela_tabela_usuario import TabelaUsuarioWindow
 
         self.janela_menu = TabelaUsuarioWindow(parent_window=self)
         self.janela_menu.show()
         self.hide()
         
     def abrir_tela_sobre(self):
-        from tela_sobre import SobreWindow
+        from views.tela_sobre import SobreWindow
 
         self.janela_menu = SobreWindow(parent_window=self)
         self.janela_menu.show()
         self.hide()
         
     def abrir_tela_carrinho_cliente(self):
-        from tela_carrinho_cliente import CarrinhoClienteWindow
+        from views.tela_carrinho_cliente import CarrinhoClienteWindow
 
         self.janela_menu = CarrinhoClienteWindow(parent_window=self)
         self.janela_menu.show()
