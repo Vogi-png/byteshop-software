@@ -1,13 +1,14 @@
 import sys
 from PySide6.QtWidgets import QApplication, QMainWindow
-from ui_tela_sobre import Ui_Sobre
+from ui_tela_carrinho_cliente import Ui_CarrinhoCliente
 import res_rc
 
-class SobreWindow(QMainWindow):
+
+class CarrinhoClienteWindow(QMainWindow):
 
     def __init__(self, parent_window):
         super().__init__()
-        self.ui = Ui_Sobre()
+        self.ui = Ui_CarrinhoCliente()
         self.ui.setupUi(self)
         
         self.parent = parent_window

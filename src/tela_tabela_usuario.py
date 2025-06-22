@@ -14,6 +14,7 @@ class TabelaUsuarioWindow(QMainWindow):
         self.ui.produtos_button.clicked.connect(self.abrir_tela_produto)
         self.ui.compras_button.clicked.connect(self.abrir_tela_carrinho)
         self.ui.sobre_button.clicked.connect(self.abrir_tela_sobre)
+        self.ui.add_button.clicked.connect(self.abrir_tela_cadastro_cliente)
         
     def abrir_tela_produto(self):
         from tela_tabela_produto import TabelaProdutoWindow
@@ -35,3 +36,10 @@ class TabelaUsuarioWindow(QMainWindow):
         self.janela_sobre = SobreWindow(parent_window=self)
         self.janela_sobre.show()
         self.hide()
+        
+    def abrir_tela_cadastro_cliente(self):
+        from tela_usuario_cadastro_pessoal import CadastroClienteWindow
+        
+        self.janela_sobre = CadastroClienteWindow(parent_window=self)
+        self.janela_sobre.show()
+        self.hide() 
