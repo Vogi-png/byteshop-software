@@ -16,6 +16,7 @@ class TabelaProdutoWindow(QMainWindow):
         self.ui.cliente_button.clicked.connect(self.abrir_tela_cliente)
         self.ui.compras_button.clicked.connect(self.abrir_tela_carrinho)
         self.ui.sobre_button.clicked.connect(self.abrir_tela_sobre)
+        self.ui.add_button.clicked.connect(self.abrir_tela_cadastro_produto)
         
 
         
@@ -38,9 +39,11 @@ class TabelaProdutoWindow(QMainWindow):
         
         self.janela_sobre = SobreWindow(parent_window=self)
         self.janela_sobre.show()
-        self.hide() # <-- MUDANÇA 2
-
-    # Exemplo de como seria a função para voltar ao menu
-    # def voltar_para_menu(self):
-    #     self.parent.show()
-    #     self.close()
+        self.hide() 
+        
+    def abrir_tela_cadastro_produto(self):
+        from tela_cadastro_produto import CadastroProdutoWindow
+        
+        self.janela_sobre = CadastroProdutoWindow(parent_window=self)
+        self.janela_sobre.show()
+        self.hide() 

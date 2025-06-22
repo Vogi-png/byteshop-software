@@ -14,6 +14,7 @@ class CarrinhoWindow(QMainWindow):
         self.ui.produtos_button.clicked.connect(self.abrir_tela_produto)
         self.ui.cliente_button.clicked.connect(self.abrir_tela_cliente)
         self.ui.sobre_button.clicked.connect(self.abrir_tela_sobre)
+        self.ui.add_button.clicked.connect(self.abrir_tela_carrinho_cliente)
             
     def abrir_tela_produto(self):
         from tela_tabela_produto import TabelaProdutoWindow
@@ -33,5 +34,12 @@ class CarrinhoWindow(QMainWindow):
         from tela_sobre import SobreWindow
 
         self.janela_menu = SobreWindow(parent_window=self)
+        self.janela_menu.show()
+        self.hide()
+        
+    def abrir_tela_carrinho_cliente(self):
+        from tela_carrinho_cliente import CarrinhoClienteWindow
+
+        self.janela_menu = CarrinhoClienteWindow(parent_window=self)
         self.janela_menu.show()
         self.hide()

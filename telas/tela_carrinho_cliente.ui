@@ -132,7 +132,7 @@ border-radius: 20px;</string>
      <string>Pesquisar</string>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/imagem/ic_busca.png);</string>
+     <string notr="true">border-image: url(:/resources/ic_busca.png);</string>
     </property>
     <property name="text">
      <string/>
