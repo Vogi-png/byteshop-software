@@ -11,11 +11,14 @@ class CarrinhoWindow(QMainWindow):
         
         self.parent = parent_window
         
+        # Conexões
         self.ui.produtos_button.clicked.connect(self.abrir_tela_produto)
         self.ui.cliente_button.clicked.connect(self.abrir_tela_cliente)
         self.ui.sobre_button.clicked.connect(self.abrir_tela_sobre)
         self.ui.add_button.clicked.connect(self.abrir_tela_carrinho_cliente)
-            
+        
+# -----------------------------------------------------------------------------------
+    
     def abrir_tela_produto(self):
         from views.tela_tabela_produto import TabelaProdutoWindow
 

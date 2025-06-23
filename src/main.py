@@ -14,7 +14,7 @@ class LoginWindow(QMainWindow):
 
     def abrir_tela_menu(self):
  
-        self.janela_menu = MenuFunWindow()
+        self.janela_menu = MenuADMWindow()
         self.janela_menu.show()
         self.close()
 
