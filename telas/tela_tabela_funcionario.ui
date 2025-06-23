@@ -23,7 +23,7 @@
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">QPushButton#logout_button {
+    <string notr="true">QPushButton#buscar_button, QPushButton#logout_button, QPushButton#add_button, QPushButton#editar_button, QPushButton#deletar_button  {
 	background-color: rgba(0, 0, 0, 0);
 	color:rgba(85, 98, 112, 255);
     border-radius: 20px;
@@ -31,7 +31,10 @@
     font-weight: bold;
 }
 
-QPushButton#logout_button:hover {
+QPushButton#buscar_button:hover,  QPushButton#logout_button:hover,
+QPushButton#add_button:hover,
+QPushButton#editar_button:hover,
+QPushButton#deletar_button:hover {
     background-color: qlineargradient(
         spread:pad,
         x1:0, y1:0, x2:1, y2:1,
@@ -41,7 +44,10 @@ QPushButton#logout_button:hover {
 	color:rgba(155, 168, 182, 220);
 }
 
-QPushButton#logout_button:pressed {
+QPushButton#buscar_button:pressed, QPushButton#logout_button:pressed,
+QPushButton#add_button:pressed,
+QPushButton#editar_button:pressed,
+QPushButton#deletar_button:pressed {
 	padding-left:5px;
 	padding-top:5px;
 	color:rgba(115, 128, 142, 255);
@@ -52,6 +58,7 @@ QPushButton#logout_button:pressed {
         stop:1 rgba(180, 180, 180, 50)
     );
 }
+
 
 QPushButton#cliente_button, QPushButton#relatorio_button, QPushButton#produtos_button, QPushButton#funcionario_button {
     background-color: qlineargradient(

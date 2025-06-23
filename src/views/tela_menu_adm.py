@@ -10,5 +10,15 @@ class MenuADMWindow(QMainWindow):
         self.ui = Ui_MenuADM()
         self.ui.setupUi(self)
         self.parent = parent_window
+        
+    # Conexões
+        self.ui.funcionario_button.clicked.connect(self.abrir_tela_funcionario)
    
+    def abrir_tela_funcionario(self):
+        from views.tela_tabela_funcionario import TabelaFuncionarioWindow 
+        
+        self.janela_produto = TabelaFuncionarioWindow(parent_window=self)
+        self.janela_produto.show()
+        self.hide()
+        
 
