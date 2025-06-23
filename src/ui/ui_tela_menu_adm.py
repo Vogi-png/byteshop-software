@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'tela_menu.ui'
+## Form generated from reading UI file 'tela_menu_adm.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.9.1
 ##
@@ -19,15 +19,15 @@ from PySide6.QtWidgets import (QApplication, QLabel, QPushButton, QSizePolicy,
     QWidget)
 import res_rc
 
-class Ui_Menu(object):
-    def setupUi(self, Menu):
-        if not Menu.objectName():
-            Menu.setObjectName(u"Menu")
-        Menu.resize(777, 515)
-        self.widget = QWidget(Menu)
+class Ui_MenuADM(object):
+    def setupUi(self, MenuADM):
+        if not MenuADM.objectName():
+            MenuADM.setObjectName(u"MenuADM")
+        MenuADM.resize(768, 515)
+        self.widget = QWidget(MenuADM)
         self.widget.setObjectName(u"widget")
-        self.widget.setGeometry(QRect(10, 10, 741, 491))
-        self.widget.setStyleSheet(u"QPushButton#buscar_button, QPushButton#logout_button {\n"
+        self.widget.setGeometry(QRect(20, 10, 731, 491))
+        self.widget.setStyleSheet(u"QPushButton#logout_button {\n"
 "	background-color: rgba(0, 0, 0, 0);\n"
 "	color:rgba(85, 98, 112, 255);\n"
 "    border-radius: 20px;\n"
@@ -35,7 +35,7 @@ class Ui_Menu(object):
 "    font-weight: bold;\n"
 "}\n"
 "\n"
-"QPushButton#buscar_button:hover,  QPushButton#logout_button:hover {\n"
+"QPushButton#logout_button:hover {\n"
 "    background-color: qlineargradient(\n"
 "        spread:pad,\n"
 "        x1:0, y1:0, x2:1, y2:1,\n"
@@ -45,7 +45,7 @@ class Ui_Menu(object):
 "	color:rgba(155, 168, 182, 220);\n"
 "}\n"
 "\n"
-"QPushButton#buscar_button:pressed, QPushButton#logout_button:pressed {\n"
+"QPushButton#logout_button:pressed {\n"
 "	padding-left:5px;\n"
 "	padding-top:5px;\n"
 "	color:rgba(115, 128, 142, 255);\n"
@@ -57,10 +57,10 @@ class Ui_Menu(object):
 "    );\n"
 "}\n"
 "\n"
-"QPushButton#cliente_button, QPushButton#compras_button, QPushButton#sobre_button, QPu"
-                        "shButton#produtos_button {\n"
+"QPushButton#cliente_button, QPushButton#relatorio_button, QPushButton#produtos_button, QPushButton#funcionario_button {\n"
 "    background-color: qlineargradient(\n"
-"        spread:pad,\n"
+"        spread"
+                        ":pad,\n"
 "        x1:0, y1:0, x2:1, y2:1,\n"
 "        stop:0 rgba(15, 35, 70, 120), \n"
 "        stop:1 rgba(200, 200, 200, 40)\n"
@@ -71,8 +71,8 @@ class Ui_Menu(object):
 "    font-weight: bold;\n"
 "}\n"
 "\n"
-"QPushButton#cliente_button:hover, QPushButton#compras_button:hover, QPushButton#sobre_button:hover,\n"
-"QPushButton#produtos_button:hover {\n"
+"QPushButton#cliente_button:hover, QPushButton#relatorio_button:hover, QPushButton#produtos_button:hover,\n"
+"QPushButton#funcionario_button:hover {\n"
 "    background-color: qlineargradient(\n"
 "        spread:pad,\n"
 "        x1:0, y1:0, x2:1, y2:1,\n"
@@ -81,16 +81,16 @@ class Ui_Menu(object):
 "    );\n"
 "}\n"
 "\n"
-"QPushButton#cliente_button:pressed, QPushButton#compras_button:pressed, QPushButton#sobre_button:pressed,\n"
-"QPushButton#produtos_button:pressed {\n"
+"QPushButton#cliente_button:pressed, QPushButton#relatorio_button:pressed, QPushButton#produtos_button:pressed,\n"
+"QPushButton#funcionario_button:pressed {\n"
 "    padding-left: 3px;\n"
 "    padding-top: 3px;\n"
 "    background-color: qlineargradient(\n"
 "        spread:pad,\n"
-"       "
-                        " x1:0, y1:0, x2:1, y2:1,\n"
+"        x1:0, y1:0, x2:1, y2:1,\n"
 "        stop:0 rgba(10, 25, 50, 150),\n"
-"        stop:1 rgba(180, 180, 180, 30)\n"
+" "
+                        "       stop:1 rgba(180, 180, 180, 30)\n"
 "    );\n"
 "}\n"
 "")
@@ -104,18 +104,15 @@ class Ui_Menu(object):
         self.fundo_transparente.setGeometry(QRect(20, 30, 691, 431))
         self.fundo_transparente.setStyleSheet(u"background-color: rgba( 0 ,0, 0, 100 );\n"
 "border-radius: 20px;")
-        self.sobre_button = QPushButton(self.widget)
-        self.sobre_button.setObjectName(u"sobre_button")
-        self.sobre_button.setGeometry(QRect(450, 45, 131, 41))
-        self.produtos_button = QPushButton(self.widget)
-        self.produtos_button.setObjectName(u"produtos_button")
-        self.produtos_button.setGeometry(QRect(36, 45, 131, 41))
-        self.compras_button = QPushButton(self.widget)
-        self.compras_button.setObjectName(u"compras_button")
-        self.compras_button.setGeometry(QRect(312, 45, 131, 41))
-        self.cliente_button = QPushButton(self.widget)
-        self.cliente_button.setObjectName(u"cliente_button")
-        self.cliente_button.setGeometry(QRect(174, 45, 131, 41))
+        self.label_2 = QLabel(self.widget)
+        self.label_2.setObjectName(u"label_2")
+        self.label_2.setGeometry(QRect(-40, 100, 450, 380))
+        self.label_2.setStyleSheet(u"border-image: url(:/resources/logo.png);")
+        self.label_3 = QLabel(self.widget)
+        self.label_3.setObjectName(u"label_3")
+        self.label_3.setGeometry(QRect(20, 30, 691, 71))
+        self.label_3.setStyleSheet(u"background-color: rgba( 0 ,0, 0, 100 );\n"
+"border-radius: 20px;")
         self.logout_button = QPushButton(self.widget)
         self.logout_button.setObjectName(u"logout_button")
         self.logout_button.setGeometry(QRect(650, 40, 50, 50))
@@ -125,43 +122,45 @@ class Ui_Menu(object):
         font.setBold(True)
         self.logout_button.setFont(font)
         self.logout_button.setStyleSheet(u"border-image: url(:/resources/ic_logout.png);")
-        self.label_3 = QLabel(self.widget)
-        self.label_3.setObjectName(u"label_3")
-        self.label_3.setGeometry(QRect(20, 30, 691, 71))
-        self.label_3.setStyleSheet(u"background-color: rgba( 0 ,0, 0, 100 );\n"
-"border-radius: 20px;")
-        self.label_2 = QLabel(self.widget)
-        self.label_2.setObjectName(u"label_2")
-        self.label_2.setGeometry(QRect(-40, 100, 450, 380))
-        self.label_2.setStyleSheet(u"border-image: url(:/resources/logo.png);")
-        self.background.raise_()
-        self.fundo_transparente.raise_()
-        self.label_3.raise_()
-        self.logout_button.raise_()
-        self.label_2.raise_()
-        self.sobre_button.raise_()
-        self.compras_button.raise_()
-        self.cliente_button.raise_()
-        self.produtos_button.raise_()
+        self.relatorio_button = QPushButton(self.widget)
+        self.relatorio_button.setObjectName(u"relatorio_button")
+        self.relatorio_button.setGeometry(QRect(450, 45, 131, 41))
+        self.cliente_button = QPushButton(self.widget)
+        self.cliente_button.setObjectName(u"cliente_button")
+        self.cliente_button.setGeometry(QRect(174, 45, 131, 41))
+        self.funcionario_button = QPushButton(self.widget)
+        self.funcionario_button.setObjectName(u"funcionario_button")
+        self.funcionario_button.setGeometry(QRect(312, 45, 131, 41))
+        self.label = QLabel(self.widget)
+        self.label.setObjectName(u"label")
+        self.label.setGeometry(QRect(54, 390, 111, 20))
+        font1 = QFont()
+        font1.setPointSize(8)
+        self.label.setFont(font1)
+        self.label.setStyleSheet(u"color: rgba(255, 255, 255, 180);  ")
+        self.produtos_button = QPushButton(self.widget)
+        self.produtos_button.setObjectName(u"produtos_button")
+        self.produtos_button.setGeometry(QRect(36, 45, 131, 41))
 
-        self.retranslateUi(Menu)
+        self.retranslateUi(MenuADM)
 
-        QMetaObject.connectSlotsByName(Menu)
+        QMetaObject.connectSlotsByName(MenuADM)
     # setupUi
 
-    def retranslateUi(self, Menu):
-        Menu.setWindowTitle(QCoreApplication.translate("Menu", u"Form", None))
+    def retranslateUi(self, MenuADM):
+        MenuADM.setWindowTitle(QCoreApplication.translate("MenuADM", u"Form", None))
         self.background.setText("")
         self.fundo_transparente.setText("")
-        self.sobre_button.setText(QCoreApplication.translate("Menu", u"Sobre", None))
-        self.produtos_button.setText(QCoreApplication.translate("Menu", u"Produto", None))
-        self.compras_button.setText(QCoreApplication.translate("Menu", u"Carrinho", None))
-        self.cliente_button.setText(QCoreApplication.translate("Menu", u"Ciente", None))
+        self.label_2.setText("")
+        self.label_3.setText("")
 #if QT_CONFIG(tooltip)
-        self.logout_button.setToolTip(QCoreApplication.translate("Menu", u"Logout", None))
+        self.logout_button.setToolTip(QCoreApplication.translate("MenuADM", u"Logout", None))
 #endif // QT_CONFIG(tooltip)
         self.logout_button.setText("")
-        self.label_3.setText("")
-        self.label_2.setText("")
+        self.relatorio_button.setText(QCoreApplication.translate("MenuADM", u"Relat\u00f3rio", None))
+        self.cliente_button.setText(QCoreApplication.translate("MenuADM", u"Cliente", None))
+        self.funcionario_button.setText(QCoreApplication.translate("MenuADM", u"Funcion\u00e1rio", None))
+        self.label.setText(QCoreApplication.translate("MenuADM", u"Modo Administrador", None))
+        self.produtos_button.setText(QCoreApplication.translate("MenuADM", u"Produto", None))
     # retranslateUi
 

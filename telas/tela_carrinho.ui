@@ -414,37 +414,6 @@ QHeaderView::section {
      </property>
     </column>
    </widget>
-   <widget class="QPushButton" name="editar_button">
-    <property name="geometry">
-     <rect>
-      <x>600</x>
-      <y>285</y>
-      <width>35</width>
-      <height>35</height>
-     </rect>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>35</width>
-      <height>35</height>
-     </size>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>15</pointsize>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="toolTip">
-     <string>Editar</string>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-image: url(:/resources/ic_editar.png);</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
    <widget class="QPushButton" name="deletar_button">
     <property name="geometry">
      <rect>

@@ -1,5 +1,9 @@
 <RCC>
   <qresource prefix="resources">
+    <file>ic_confProduto.png</file>
+    <file>ic_confCompra.png</file>
+    <file>ic_confFuncionario.png</file>
+    <file>ic_confCliente.png</file>
     <file>ByteShopLogo.png</file>
     <file>ic_add.png</file>
     <file>ic_busca.png</file>

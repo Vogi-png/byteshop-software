@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Menu</class>
- <widget class="QWidget" name="Menu">
+ <class>MenuADM</class>
+ <widget class="QWidget" name="MenuADM">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>777</width>
+    <width>768</width>
     <height>515</height>
    </rect>
   </property>
@@ -16,14 +16,14 @@
   <widget class="QWidget" name="widget" native="true">
    <property name="geometry">
     <rect>
-     <x>10</x>
+     <x>20</x>
      <y>10</y>
-     <width>741</width>
+     <width>731</width>
      <height>491</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">QPushButton#buscar_button, QPushButton#logout_button {
+    <string notr="true">QPushButton#logout_button {
 	background-color: rgba(0, 0, 0, 0);
 	color:rgba(85, 98, 112, 255);
     border-radius: 20px;
@@ -31,7 +31,7 @@
     font-weight: bold;
 }
 
-QPushButton#buscar_button:hover,  QPushButton#logout_button:hover {
+QPushButton#logout_button:hover {
     background-color: qlineargradient(
         spread:pad,
         x1:0, y1:0, x2:1, y2:1,
@@ -41,7 +41,7 @@ QPushButton#buscar_button:hover,  QPushButton#logout_button:hover {
 	color:rgba(155, 168, 182, 220);
 }
 
-QPushButton#buscar_button:pressed, QPushButton#logout_button:pressed {
+QPushButton#logout_button:pressed {
 	padding-left:5px;
 	padding-top:5px;
 	color:rgba(115, 128, 142, 255);
@@ -53,7 +53,7 @@ QPushButton#buscar_button:pressed, QPushButton#logout_button:pressed {
     );
 }
 
-QPushButton#cliente_button, QPushButton#compras_button, QPushButton#sobre_button, QPushButton#produtos_button {
+QPushButton#cliente_button, QPushButton#relatorio_button, QPushButton#produtos_button, QPushButton#funcionario_button {
     background-color: qlineargradient(
         spread:pad,
         x1:0, y1:0, x2:1, y2:1,
@@ -66,8 +66,8 @@ QPushButton#cliente_button, QPushButton#compras_button, QPushButton#sobre_button
     font-weight: bold;
 }
 
-QPushButton#cliente_button:hover, QPushButton#compras_button:hover, QPushButton#sobre_button:hover,
-QPushButton#produtos_button:hover {
+QPushButton#cliente_button:hover, QPushButton#relatorio_button:hover, QPushButton#produtos_button:hover,
+QPushButton#funcionario_button:hover {
     background-color: qlineargradient(
         spread:pad,
         x1:0, y1:0, x2:1, y2:1,
@@ -76,8 +76,8 @@ QPushButton#produtos_button:hover {
     );
 }
 
-QPushButton#cliente_button:pressed, QPushButton#compras_button:pressed, QPushButton#sobre_button:pressed,
-QPushButton#produtos_button:pressed {
+QPushButton#cliente_button:pressed, QPushButton#relatorio_button:pressed, QPushButton#produtos_button:pressed,
+QPushButton#funcionario_button:pressed {
     padding-left: 3px;
     padding-top: 3px;
     background-color: qlineargradient(
@@ -123,56 +123,37 @@ border-radius: 20px;</string>
      <string/>
     </property>
    </widget>
-   <widget class="QPushButton" name="sobre_button">
+   <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>450</x>
-      <y>45</y>
-      <width>131</width>
-      <height>41</height>
+      <x>-40</x>
+      <y>100</y>
+      <width>450</width>
+      <height>380</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/resources/logo.png);</string>
+    </property>
     <property name="text">
-     <string>Sobre</string>
+     <string/>
     </property>
    </widget>
-   <widget class="QPushButton" name="produtos_button">
+   <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>36</x>
-      <y>45</y>
-      <width>131</width>
-      <height>41</height>
+      <x>20</x>
+      <y>30</y>
+      <width>691</width>
+      <height>71</height>
      </rect>
     </property>
-    <property name="text">
-     <string>Produto</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="compras_button">
-    <property name="geometry">
-     <rect>
-      <x>312</x>
-      <y>45</y>
-      <width>131</width>
-      <height>41</height>
-     </rect>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba( 0 ,0, 0, 100 );
+border-radius: 20px;</string>
     </property>
     <property name="text">
-     <string>Carrinho</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="cliente_button">
-    <property name="geometry">
-     <rect>
-      <x>174</x>
-      <y>45</y>
-      <width>131</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Ciente</string>
+     <string/>
     </property>
    </widget>
    <widget class="QPushButton" name="logout_button">
@@ -206,48 +187,79 @@ border-radius: 20px;</string>
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_3">
+   <widget class="QPushButton" name="relatorio_button">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>30</y>
-      <width>691</width>
-      <height>71</height>
+      <x>450</x>
+      <y>45</y>
+      <width>131</width>
+      <height>41</height>
      </rect>
     </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgba( 0 ,0, 0, 100 );
-border-radius: 20px;</string>
-    </property>
     <property name="text">
-     <string/>
+     <string>Relatório</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_2">
+   <widget class="QPushButton" name="cliente_button">
     <property name="geometry">
      <rect>
-      <x>-40</x>
-      <y>100</y>
-      <width>450</width>
-      <height>380</height>
+      <x>174</x>
+      <y>45</y>
+      <width>131</width>
+      <height>41</height>
      </rect>
     </property>
-    <property name="styleSheet">
-     <string notr="true">border-image: url(:/resources/logo.png);</string>
-    </property>
     <property name="text">
-     <string/>
+     <string>Cliente</string>
     </property>
    </widget>
-   <zorder>background</zorder>
-   <zorder>fundo_transparente</zorder>
-   <zorder>label_3</zorder>
-   <zorder>logout_button</zorder>
-   <zorder>label_2</zorder>
-   <zorder>sobre_button</zorder>
-   <zorder>compras_button</zorder>
-   <zorder>cliente_button</zorder>
-   <zorder>produtos_button</zorder>
+   <widget class="QPushButton" name="funcionario_button">
+    <property name="geometry">
+     <rect>
+      <x>312</x>
+      <y>45</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Funcionário</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>54</x>
+      <y>390</y>
+      <width>111</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgba(255, 255, 255, 180);  </string>
+    </property>
+    <property name="text">
+     <string>Modo Administrador</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="produtos_button">
+    <property name="geometry">
+     <rect>
+      <x>36</x>
+      <y>45</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Produto</string>
+    </property>
+   </widget>
   </widget>
  </widget>
  <resources>

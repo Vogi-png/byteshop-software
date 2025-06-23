@@ -216,12 +216,6 @@ class Ui_Carrinho(object):
 "}\n"
 "\n"
 "")
-        self.editar_button = QPushButton(self.widget)
-        self.editar_button.setObjectName(u"editar_button")
-        self.editar_button.setGeometry(QRect(600, 285, 35, 35))
-        self.editar_button.setMaximumSize(QSize(35, 35))
-        self.editar_button.setFont(font)
-        self.editar_button.setStyleSheet(u"border-image: url(:/resources/ic_editar.png);")
         self.deletar_button = QPushButton(self.widget)
         self.deletar_button.setObjectName(u"deletar_button")
         self.deletar_button.setGeometry(QRect(646, 285, 35, 35))
@@ -271,10 +265,6 @@ class Ui_Carrinho(object):
         ___qtablewidgetitem5.setText(QCoreApplication.translate("Carrinho", u"Pagamento", None));
         ___qtablewidgetitem6 = self.funcionario_table.horizontalHeaderItem(6)
         ___qtablewidgetitem6.setText(QCoreApplication.translate("Carrinho", u"Status", None));
-#if QT_CONFIG(tooltip)
-        self.editar_button.setToolTip(QCoreApplication.translate("Carrinho", u"Editar", None))
-#endif // QT_CONFIG(tooltip)
-        self.editar_button.setText("")
 #if QT_CONFIG(tooltip)
         self.deletar_button.setToolTip(QCoreApplication.translate("Carrinho", u"Excluir", None))
 #endif // QT_CONFIG(tooltip)
