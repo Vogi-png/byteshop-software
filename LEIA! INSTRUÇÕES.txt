@@ -1,0 +1,13 @@
+# Colocar o Banco de Dados pra funcionar
+
+>> Passo 1: Mude a senha do banco de dados (para a SUA senha do SEU banco de dados local) nos arquivos conexoes.py e database_setup.py.
+
+>> Passo 2: Abra o terminal e coloque o comando "python database_setup.py".
+
+# Executar o Projeto
+
+>> Passo 3: Após isso abra o projeto com o comando "python src/main.py".
+
+>> Conta de Administrador:
+- Email: adm1@gmail.com
+- Senha: 12345

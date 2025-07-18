@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CadastroProduto</class>
+ <widget class="QWidget" name="CadastroProduto">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>521</width>
+    <height>622</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>501</width>
+     <height>601</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#voltar_button {
+	background-color: rgba(0, 0, 0, 0);
+	color:rgba(85, 98, 112, 255);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 30);
+    font-weight: bold;
+}
+
+QPushButton#voltar_button:hover {
+    background-color: qlineargradient(
+        spread:pad,
+        x1:0, y1:0, x2:1, y2:1,
+        stop:0 rgba(25, 55, 100, 240),
+        stop:1 rgba(220, 220, 220, 80)
+    );
+	color:rgba(155, 168, 182, 220);
+}
+
+QPushButton#voltar_button:pressed {
+	padding-left:5px;
+	padding-top:5px;
+	color:rgba(115, 128, 142, 255);
+    background-color: qlineargradient(
+        spread:pad,
+        x1:0, y1:0, x2:1, y2:1,
+        stop:0 rgba(10, 25, 50, 230),
+        stop:1 rgba(180, 180, 180, 50)
+    );
+}
+
+QPushButton#prod_cadastrar_button {
+    background-color: qlineargradient(
+        spread:pad,
+        x1:0, y1:0, x2:1, y2:1,
+        stop:0 rgba(15, 35, 70, 230),
+        stop:1 rgba(200, 200, 200, 60)
+    );
+    color: rgba(255, 255, 255, 230);
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 30);
+    font-weight: bold;
+}
+
+QPushButton#prod_cadastrar_button:hover {
+    background-color: qlineargradient(
+        spread:pad,
+        x1:0, y1:0, x2:1, y2:1,
+        stop:0 rgba(25, 55, 100, 240),
+        stop:1 rgba(220, 220, 220, 80)
+    );
+}
+
+QPushButton#prod_cadastrar_button:pressed {
+    padding-left: 3px;
+    padding-top: 3px;
+    background-color: qlineargradient(
+        spread:pad,
+        x1:0, y1:0, x2:1, y2:1,
+        stop:0 rgba(10, 25, 50, 230),
+        stop:1 rgba(180, 180, 180, 50)
+    );
+}</string>
+   </property>
+   <widget class="QLabel" name="background">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>11</y>
+      <width>471</width>
+      <height>571</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/resources/log_background.png);
+border-radius: 20px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="fundo_transparente">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>451</width>
+      <height>551</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba( 0 ,0, 0, 100 );
+border-radius: 20px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>115</x>
+      <y>48</y>
+      <width>311</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>23</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgba(255, 255, 255, 214);</string>
+    </property>
+    <property name="text">
+     <string>Cadastro de Produto</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="nome_produto">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>186</y>
+      <width>371</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+    background-color: rgba(0, 0, 0, 80);
+    border: 2px solid rgba(105, 118, 132, 220);
+    border-radius: 10px;
+    color: rgba(255, 255, 255, 230);
+    padding: 6px 10px;
+}
+
+QLineEdit:focus {
+    border: 2px solid rgba(130, 170, 255, 255);
+    background-color: rgba(0, 0, 0, 100);
+}
+</string>
+    </property>
+    <property name="placeholderText">
+     <string>Informe nome do produto</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="preco_produto">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>286</y>
+      <width>171</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+    background-color: rgba(0, 0, 0, 80);
+    border: 2px solid rgba(105, 118, 132, 220);
+    border-radius: 10px;
+    color: rgba(255, 255, 255, 230);
+    padding: 6px 10px;
+}
+
+QLineEdit:focus {
+    border: 2px solid rgba(130, 170, 255, 255);
+    background-color: rgba(0, 0, 0, 100);
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>Valor do produto</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="quantidade_produto">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>286</y>
+      <width>171</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+    background-color: rgba(0, 0, 0, 80);
+    border: 2px solid rgba(105, 118, 132, 220);
+    border-radius: 10px;
+    color: rgba(255, 255, 255, 230);
+    padding: 6px 10px;
+}
+
+QLineEdit:focus {
+    border: 2px solid rgba(130, 170, 255, 255);
+    background-color: rgba(0, 0, 0, 100);
+}
+</string>
+    </property>
+    <property name="placeholderText">
+     <string>Quantidade </string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="marca_produto">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>385</y>
+      <width>371</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+    background-color: rgba(0, 0, 0, 80);
+    border: 2px solid rgba(105, 118, 132, 220);
+    border-radius: 10px;
+    color: rgba(255, 255, 255, 230);
+    padding: 6px 10px;
+}
+
+QLineEdit:focus {
+    border: 2px solid rgba(130, 170, 255, 255);
+    background-color: rgba(0, 0, 0, 100);
+}
+</string>
+    </property>
+    <property name="placeholderText">
+     <string>Informe a marca do produto</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>65</x>
+      <y>159</y>
+      <width>201</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgba(255, 255, 255, 214);</string>
+    </property>
+    <property name="text">
+     <string>Título do Produto:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>66</x>
+      <y>255</y>
+      <width>63</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgba(255, 255, 255, 214);</string>
+    </property>
+    <property name="text">
+     <string>Preço:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>266</x>
+      <y>255</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgba(255, 255, 255, 214);</string>
+    </property>
+    <property name="text">
+     <string>Estoque:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>66</x>
+      <y>355</y>
+      <width>63</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgba(255, 255, 255, 214);</string>
+    </property>
+    <property name="text">
+     <string>Marca:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="prod_cadastrar_button">
+    <property name="geometry">
+     <rect>
+      <x>88</x>
+      <y>470</y>
+      <width>311</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#prod_cadastrar_button {
+    background-color: qlineargradient(
+        spread:pad,
+        x1:0, y1:0, x2:1, y2:1,
+        stop:0 rgba(15, 35, 70, 230),
+        stop:1 rgba(200, 200, 200, 60)
+    );
+    color: rgba(255, 255, 255, 230);
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 30);
+    font-weight: bold;
+}
+
+QPushButton#prod_cadastrar_button:hover {
+    background-color: qlineargradient(
+        spread:pad,
+        x1:0, y1:0, x2:1, y2:1,
+        stop:0 rgba(25, 55, 100, 240),
+        stop:1 rgba(220, 220, 220, 80)
+    );
+}
+
+QPushButton#prod_cadastrar_button:pressed {
+    padding-left: 3px;
+    padding-top: 3px;
+    background-color: qlineargradient(
+        spread:pad,
+        x1:0, y1:0, x2:1, y2:1,
+        stop:0 rgba(10, 25, 50, 230),
+        stop:1 rgba(180, 180, 180, 50)
+    );
+}</string>
+    </property>
+    <property name="text">
+     <string>Cadastrar</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="voltar_button">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>45</y>
+      <width>51</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Voltar</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/resources/ic_voltar.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../resources/res.qrc"/>
+ </resources>
+ <connections/>
+</ui>
