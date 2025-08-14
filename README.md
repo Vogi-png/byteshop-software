@@ -44,6 +44,15 @@
 
 <br/>
 
+## 👩‍💻 Tecnologias Utilizadas
+* **Linguagem:** Python
+* **IDE:** Visual Studio Code (VS Code)
+* **Banco de Dados:** MySQL
+* **UI/Layout:** Qt Designer com PySide6
+---
+
+<br/>
+
 ## 🛠️ Ajustes e melhorias
 
 O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas para as seguintes tarefas:
