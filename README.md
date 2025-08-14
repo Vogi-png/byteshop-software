@@ -107,6 +107,12 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
 <table>
   <tr>
     <td align="center">
+      <img src="https://i.pinimg.com/736x/41/97/21/4197215a4c97c551462754bd099d2da3.jpg" width="100px;" alt="Foto de Giovanna Leal de Araujo"/><br>
+      <sub>
+        <b>Giovanna Leal de Araujo</b>
+      </sub>
+    </td>
+    <td align="center">
       <img src="https://i.pinimg.com/736x/e1/88/38/e1883855b1382928c9bd499a3395505c.jpg" width="100px;" alt="Foto de Guilherme Barreiros Pimentel"/><br>
       <sub>
         <b>Guilherme Barreiros Pimentel</b>
