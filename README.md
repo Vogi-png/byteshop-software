@@ -1,11 +1,11 @@
 # Byteshop: Loja fictícia de peças eletrônicas
 
+![Status do Projeto](https://img.shields.io/badge/status-em%20desenvolvimento-yellow?style=for-the-badge)
+###
 ![Tamanho do Repositório](https://img.shields.io/github/repo-size/Vogi-png/byteshop-software?style=for-the-badge)
 ![Linguagens Utilizadas](https://img.shields.io/github/languages/count/Vogi-png/byteshop-software?style=for-the-badge)
 ![Forks](https://img.shields.io/github/forks/Vogi-png/byteshop-software?style=for-the-badge)
 [![Versão](https://img.shields.io/badge/Versão-0.0-blue?style=for-the-badge)](https://github.com/Vogi-png/byteshop-software/releases)
-###
-![Status do Projeto](https://img.shields.io/badge/%20status%20-%20em%20desenvolvimento-yellow)
 
 <br/>
 
