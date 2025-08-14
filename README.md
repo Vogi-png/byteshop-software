@@ -7,6 +7,7 @@
 ###
 ![Status do Projeto](https://img.shields.io/badge/%20status%20-%20em%20desenvolvimento-yellow)
 
+<br/>
 
 ## 📸 Screenshots
 
@@ -40,6 +41,9 @@
 * 🔍 **Busca Inteligente:** Ferramenta de pesquisa em todas as seções para encontrar registros rapidamente.
 
 ---
+
+<br/>
+
 ## 🛠️ Ajustes e melhorias
 
 O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas para as seguintes tarefas:
@@ -52,6 +56,9 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 - [ ] **Empacotamento da Aplicação:** Criar um instalador/executável (`.exe` para Windows) para que o sistema possa ser facilmente instalado e utilizado sem a necessidade de ter o Python e as bibliotecas instaladas.
 - [ ] **Adicionar Testes Automatizados:** Desenvolver testes unitários e de integração para garantir a estabilidade do sistema e evitar regressões.
 ---
+
+<br/>
+
 ## 💻 Pré-requisitos
 
 Antes de começar, verifique se você atendeu aos seguintes requisitos:
@@ -71,6 +78,9 @@ Bibliotecas Python necessárias:
 - mysql-connector-python (conexão com MySQL)
   
 ---
+
+<br/>
+
 ## 🚀 Instalando Bytecode
 
 Para instalar o Bytecode, siga estas etapas:
@@ -82,6 +92,9 @@ git clone https://github.com/Vogi-png/byteshop-software.git
 ```
 
 ---
+
+<br/>
+
 ## ☕ Usando Byteshop
 
 Para usar o sitema da empresa fictícia, siga estas etapas:
@@ -100,6 +113,9 @@ python database_setup.py
 python src/main.py
 ```
 ---
+
+<br/>
+
 ## 🤝 Colaboradores
 
 Agradecemos às seguintes pessoas que contribuíram para este projeto:
@@ -150,15 +166,5 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
     </td>
   </tr>
 </table>
-  
-
-
-
-
-
-
-
-
-
 
 </table>
