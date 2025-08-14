@@ -135,33 +135,9 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
       </sub>
     </td>
     <td align="center">
-      <img src="https://i.pinimg.com/736x/11/2b/1a/112b1a7ca8d9c0170085fca542b8cfe1.jpg" width="100px;" alt="Foto de João Pedro de Macedo Figueiredo"/><br>
-      <sub>
-        <b>João Pedro de Macedo Figueiredo</b>
-      </sub>
-    </td>
-    <td align="center">
-      <img src="https://i.pinimg.com/736x/50/75/93/5075931c0a54361fd9abb6ea219c3985.jpg" width="100px;" alt="Foto de João Vitor Gomes Santos"/><br>
-      <sub>
-        <b>João Vitor Gomes Santos</b>
-      </sub>
-    </td>
-    <td align="center">
       <img src="https://i.pinimg.com/1200x/d0/2d/56/d02d560d7798037681a520e2f13accd9.jpg" width="100px;" alt="Foto de Lorenzo Braiener da Cunha"/><br>
       <sub>
         <b>Lorenzo Braiener da Cunha</b>
-      </sub>
-    </td>
-    <td align="center">
-      <img src="https://i.pinimg.com/1200x/29/38/96/293896c8846c9ba0767c820eccc9a0be.jpg" width="100px;" alt="Foto de Maria Luiza França Mendes"/><br>
-      <sub>
-        <b>Maria Luiza França Mendes</b>
-      </sub>
-    </td>
-    <td align="center">
-      <img src="https://i.pinimg.com/736x/d4/a5/4a/d4a54a526c73fae05956a56420a9f48b.jpg" width="100px;" alt="Foto de Raphael Bíssimos Costa Dos Santos"/><br>
-      <sub>
-        <b>Raphael Bíssimos Costa Dos Santos</b>
       </sub>
     </td>
   </tr>
